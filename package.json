@@ -1,6 +1,6 @@
 {
   "name": "thienatom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Universal Atomic Utility Registry — language-first, zero dependencies, one task per atom.",
   "license": "MIT",
   "repository": {
@@ -30,10 +30,22 @@
     "typescript": "^5.9.3"
   },
   "exports": {
-    "./math/is-prime": { "types": "./dist/ts/math/is-prime/index.d.ts", "default": "./units/js/math/is-prime/index.js" },
-    "./math/factorial": { "types": "./dist/ts/math/factorial/index.d.ts", "default": "./units/js/math/factorial/index.js" },
-    "./math/gcd": { "types": "./dist/ts/math/gcd/index.d.ts", "default": "./units/js/math/gcd/index.js" },
-    "./math/clamp": { "types": "./dist/ts/math/clamp/index.d.ts", "default": "./units/js/math/clamp/index.js" },
+    "./math/is-prime": {
+      "types": "./dist/ts/math/is-prime/index.d.ts",
+      "default": "./units/js/math/is-prime/index.js"
+    },
+    "./math/factorial": {
+      "types": "./dist/ts/math/factorial/index.d.ts",
+      "default": "./units/js/math/factorial/index.js"
+    },
+    "./math/gcd": {
+      "types": "./dist/ts/math/gcd/index.d.ts",
+      "default": "./units/js/math/gcd/index.js"
+    },
+    "./math/clamp": {
+      "types": "./dist/ts/math/clamp/index.d.ts",
+      "default": "./units/js/math/clamp/index.js"
+    },
     "./math/round-decimal": "./units/js/math/round-decimal/index.js",
     "./math/random-range": "./units/js/math/random-range/index.js",
     "./math/sum": "./units/js/math/sum/index.js",
@@ -43,7 +55,10 @@
     "./math/in-range": "./units/js/math/in-range/index.js",
     "./math/is-even": "./units/js/math/is-even/index.js",
     "./math/is-odd": "./units/js/math/is-odd/index.js",
-    "./string/slugify": { "types": "./dist/ts/string/slugify/index.d.ts", "default": "./units/js/string/slugify/index.js" },
+    "./string/slugify": {
+      "types": "./dist/ts/string/slugify/index.d.ts",
+      "default": "./units/js/string/slugify/index.js"
+    },
     "./string/capitalize": "./units/js/string/capitalize/index.js",
     "./string/truncate": "./units/js/string/truncate/index.js",
     "./string/trim-whitespace": "./units/js/string/trim-whitespace/index.js",
@@ -51,27 +66,72 @@
     "./array/chunk": "./units/js/array/chunk/index.js",
     "./array/compact": "./units/js/array/compact/index.js",
     "./array/unique": "./units/js/array/unique/index.js",
-    "./array/last": { "types": "./dist/ts/array/last/index.d.ts", "default": "./units/js/array/last/index.js" },
-    "./array/first": { "types": "./dist/ts/array/first/index.d.ts", "default": "./units/js/array/first/index.js" },
+    "./array/last": {
+      "types": "./dist/ts/array/last/index.d.ts",
+      "default": "./units/js/array/last/index.js"
+    },
+    "./array/first": {
+      "types": "./dist/ts/array/first/index.d.ts",
+      "default": "./units/js/array/first/index.js"
+    },
     "./array/range": "./units/js/array/range/index.js",
     "./array/flatten-shallow": "./units/js/array/flatten-shallow/index.js",
     "./array/difference": "./units/js/array/difference/index.js",
-    "./type/is-nil": { "types": "./dist/ts/type/is-nil/index.d.ts", "default": "./units/js/type/is-nil/index.js" },
-    "./type/is-defined": { "types": "./dist/ts/type/is-defined/index.d.ts", "default": "./dist/ts/type/is-defined/index.js" },
-    "./type/assert-defined": { "types": "./dist/ts/type/assert-defined/index.d.ts", "default": "./dist/ts/type/assert-defined/index.js" },
-    "./type/assert-never": { "types": "./dist/ts/type/assert-never/index.d.ts", "default": "./dist/ts/type/assert-never/index.js" },
-    "./type/is-string": { "types": "./dist/ts/type/is-string/index.d.ts", "default": "./units/js/type/is-string/index.js" },
-    "./type/is-array": { "types": "./dist/ts/type/is-array/index.d.ts", "default": "./units/js/type/is-array/index.js" },
-    "./type/is-plain-object": { "types": "./dist/ts/type/is-plain-object/index.d.ts", "default": "./dist/ts/type/is-plain-object/index.js" },
-    "./object/pick": { "types": "./dist/ts/object/pick/index.d.ts", "default": "./units/js/object/pick/index.js" },
-    "./object/omit": { "types": "./dist/ts/object/omit/index.d.ts", "default": "./units/js/object/omit/index.js" },
-    "./function/noop": { "types": "./dist/ts/function/noop/index.d.ts", "default": "./units/js/function/noop/index.js" },
-    "./function/identity": { "types": "./dist/ts/function/identity/index.d.ts", "default": "./units/js/function/identity/index.js" },
+    "./type/is-nil": {
+      "types": "./dist/ts/type/is-nil/index.d.ts",
+      "default": "./units/js/type/is-nil/index.js"
+    },
+    "./type/is-defined": {
+      "types": "./dist/ts/type/is-defined/index.d.ts",
+      "default": "./dist/ts/type/is-defined/index.js"
+    },
+    "./type/assert-defined": {
+      "types": "./dist/ts/type/assert-defined/index.d.ts",
+      "default": "./dist/ts/type/assert-defined/index.js"
+    },
+    "./type/assert-never": {
+      "types": "./dist/ts/type/assert-never/index.d.ts",
+      "default": "./dist/ts/type/assert-never/index.js"
+    },
+    "./type/is-string": {
+      "types": "./dist/ts/type/is-string/index.d.ts",
+      "default": "./units/js/type/is-string/index.js"
+    },
+    "./type/is-array": {
+      "types": "./dist/ts/type/is-array/index.d.ts",
+      "default": "./units/js/type/is-array/index.js"
+    },
+    "./type/is-plain-object": {
+      "types": "./dist/ts/type/is-plain-object/index.d.ts",
+      "default": "./dist/ts/type/is-plain-object/index.js"
+    },
+    "./object/pick": {
+      "types": "./dist/ts/object/pick/index.d.ts",
+      "default": "./units/js/object/pick/index.js"
+    },
+    "./object/omit": {
+      "types": "./dist/ts/object/omit/index.d.ts",
+      "default": "./units/js/object/omit/index.js"
+    },
+    "./function/noop": {
+      "types": "./dist/ts/function/noop/index.d.ts",
+      "default": "./units/js/function/noop/index.js"
+    },
+    "./function/identity": {
+      "types": "./dist/ts/function/identity/index.d.ts",
+      "default": "./units/js/function/identity/index.js"
+    },
     "./function/debounce": "./units/js/function/debounce/index.js",
-    "./async/sleep": { "types": "./dist/ts/async/sleep/index.d.ts", "default": "./units/js/async/sleep/index.js" },
+    "./async/sleep": {
+      "types": "./dist/ts/async/sleep/index.d.ts",
+      "default": "./units/js/async/sleep/index.js"
+    },
     "./async/timeout-wrap": "./units/js/async/timeout-wrap/index.js",
     "./validation/is-email": "./units/js/validation/is-email/index.js",
     "./validation/is-url": "./units/js/validation/is-url/index.js",
-    "./misc/coalesce": { "types": "./dist/ts/misc/coalesce/index.d.ts", "default": "./units/js/misc/coalesce/index.js" }
+    "./misc/coalesce": {
+      "types": "./dist/ts/misc/coalesce/index.d.ts",
+      "default": "./units/js/misc/coalesce/index.js"
+    }
   }
 }

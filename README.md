@@ -21,14 +21,16 @@ npm install thienatom
 
 ## Quick Start
 
+ThienAtom is a single package that works seamlessly for both **JavaScript** and **TypeScript**. You use the exact same import paths for both; TypeScript types are automatically included!
+
 Import only the atom you need using subpath imports:
 
 ```js
-// ESM
+// JavaScript (ESM) or TypeScript
 import isPrime from 'thienatom/math/is-prime';
 import chunk from 'thienatom/array/chunk';
 
-// CommonJS
+// JavaScript (CommonJS)
 const isPrime = require('thienatom/math/is-prime');
 const chunk = require('thienatom/array/chunk');
 ```

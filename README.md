@@ -15,11 +15,19 @@ ThienAtom is a modern, lodash-alternative utility library designed with an "atom
 
 ## Installation
 
+**JavaScript / TypeScript:**
 ```bash
 npm install thienatom
 ```
 
+**Python:**
+```bash
+pip install thienatom
+```
+
 ## Quick Start
+
+### JavaScript / TypeScript
 
 ThienAtom is a single package that works seamlessly for both **JavaScript** and **TypeScript**. You use the exact same import paths for both; TypeScript types are automatically included!
 
@@ -36,6 +44,18 @@ const chunk = require('thienatom/array/chunk');
 ```
 
 **Note:** Always use the default import. Each atom is the default export of its specific subpath.
+
+### Python
+
+Import directly from the category module. Python functions are fully type-hinted!
+
+```python
+from thienatom.math import is_prime, factorial, gcd
+
+print(is_prime(7))      # True
+print(factorial(5))     # 120
+print(gcd(48, 18))      # 6
+```
 
 ## Available Functions
 
@@ -102,4 +122,4 @@ const chunk = require('thienatom/array/chunk');
 
 ## Contributing
 
-The repository uses a language-first structure (`units/[language]/[category]/[atom-name]`). Currently, JavaScript (`js`) and TypeScript (`ts`) are supported. Check the repository documentation for more details on creating new atoms.
+The repository uses a language-first structure (`units/[language]/[category]/[atom-name]`). Currently, JavaScript (`js`), TypeScript (`ts`), and Python (`python`) are supported. Check the repository documentation for more details on creating new atoms.

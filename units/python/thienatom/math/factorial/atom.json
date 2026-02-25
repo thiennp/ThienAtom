@@ -1,0 +1,6 @@
+{
+  "name": "factorial",
+  "category": "math",
+  "complexity": "O(n)",
+  "tags": ["math", "number", "factorial"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "gcd",
+  "category": "math",
+  "complexity": "O(log(min(a, b)))",
+  "tags": ["math", "number", "gcd", "divisor"]
+}
